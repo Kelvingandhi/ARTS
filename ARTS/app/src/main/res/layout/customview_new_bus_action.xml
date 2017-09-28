@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.1"
+            android:id="@+id/layout1"
+            >
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="170px"
+                android:id="@+id/bus_search_icon"
+                android:src="@drawable/mipmap"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/bus_no_nbaview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            android:layout_weight="0.9"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/starting_cbaview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting on -- -- :"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/start_date_nbaview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Textview"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="5dp"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Textview"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/source_name_nbaview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="Textview"
+                    />
+
+                <ImageView
+
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:id="@+id/arrow_icon"
+                    android:layout_marginLeft="20dp"
+
+                    android:src="@drawable/arrow"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Textview"
+                    android:id="@+id/desti_name_nbaview" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/dep_time_nbaview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Textview"
+                    />
+
+                <ImageView
+
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+
+
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/arrow"
+
+                    />
+
+                <TextView
+                    android:id="@+id/arri_time_nbaview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Textview"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

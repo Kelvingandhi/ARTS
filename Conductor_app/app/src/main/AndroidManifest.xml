@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kelvin.my_conductor_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission  android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/conductor_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QRScanner_Activity" />
+        <activity android:name=".CustomView_QRticket_details" />
+        <activity android:name=".After_scan_Activity" />
+
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lost_and_found_files.LostFoundActivityActivity"
+            android:label="@string/title_activity_lost_found"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".lost_and_found_files.Give_response"/>
+
+        <!-- GPS Service Declare-->
+        <service android:name="com.example.kelvin.my_conductor_app.backgroundservice" android:enabled="true"/>
+
+    </application>
+
+</manifest>

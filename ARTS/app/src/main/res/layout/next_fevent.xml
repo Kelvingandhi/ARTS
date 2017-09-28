@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_margin="10dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text111"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text2"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text3"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text4"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text5"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text6"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text7"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp" android:ems="10" android:id="@+id/Text8"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/black" android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" android:ems="10" android:id="@+id/Text9"/>
+</LinearLayout>

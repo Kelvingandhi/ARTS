@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.soham.arts">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <permission android:name="com.example.soham.arts.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.example.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/final_logo2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.example.systemlogin" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCQmc6mr9SCm2n4dSEIL28KgNrGqOngN7Q" />
+
+        <activity android:name="com.example.soham.intro_design.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.soham.arts.Login"
+            >
+
+        </activity>
+
+        <activity
+            android:name=".Drawer_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.soham.arts.AboutUsActivity"
+            android:label="@string/activity_title_about_us" />
+        <activity
+            android:name="com.example.soham.arts.PrivacyPolicyActivity"
+            android:label="@string/activity_title_privacy_policy" />
+
+        <activity
+            android:name="com.example.soham.arts.FAQs"
+            android:label="@string/FAQs" />
+        <activity
+            android:name="com.example.soham.arts.Feedback"
+            android:label="@string/Feedback" />
+
+        <activity
+            android:name="com.example.soham.fragment.Card_detail_verify"/>
+        <activity
+            android:name="com.example.soham.fragment.Change_password"/>
+        <activity
+            android:name="com.example.soham.fragment.Update_new_password"/>
+
+
+
+
+        <activity
+            android:name="com.example.soham.arts.Registration"/>
+
+        <activity
+            android:name="com.example.soham.arts.Regi_otp"/>
+
+        <activity
+            android:name="com.example.soham.arts.Invite_code"/>
+        <activity
+            android:name="com.example.soham.arts.Forget_Pass"/>
+
+        <activity
+            android:name="com.example.soham.arts.Ticket_Genrate"/>
+        <activity
+            android:name="com.example.soham.arts.Fatch_BusList"/>
+        <activity
+            android:name="com.example.soham.arts.Display_price"/>
+        <activity android:name="com.example.soham.seatBookingrecyclerView.MainActivity"/>
+        <activity android:name="com.example.soham.arts.Booking_true"/>
+        <activity android:name="com.example.soham.arts.Success_change_pass"/>
+
+
+        <activity android:name="com.example.soham.arts.All_Availability"/>
+
+        <activity android:name="com.example.soham.arts.View_live_bus"/>
+        <activity android:name="com.example.soham.arts.Live_bus_status"/>
+
+
+        <activity android:name="com.example.soham.arts.Live_station_status"/>
+
+
+
+        <activity android:name="com.example.soham.arts.Between_station"/>
+
+
+        <activity android:name="com.example.soham.arts.View_between_station"/>
+
+
+        <activity android:name="com.example.soham.googlemapdemo.MapActivity"/>
+        <activity android:name="com.example.soham.googlemapdemo.MapsActivity"/>
+
+
+        <activity android:name="com.example.soham.arts.Booking"/>
+        <activity android:name="com.example.soham.arts.Display_ticket"/>
+
+
+
+        <activity android:name="com.example.soham.arts.New_bus_action"/>
+
+        <activity android:name="com.example.soham.arts.Fare_inquiry_bus_search"/>
+        <activity android:name="com.example.soham.arts.Fare_inquiry"/>
+
+        <activity android:name="com.example.soham.arts.Lost_item_request"/>
+
+
+        <activity android:name="com.example.soham.arts.Cancelled_bus_action"/>
+
+
+
+
+
+
+        <service
+            android:name="com.example.soham.arts.GCMIntentService"
+
+
+            />
+
+        <service
+            android:name="com.example.soham.arts.backgroundservice"
+
+
+            />
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+
+    </application>
+
+</manifest>

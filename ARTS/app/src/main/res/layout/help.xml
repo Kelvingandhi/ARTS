@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        >
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+        <Button
+        android:id="@+id/expandableButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton1"
+        android:paddingRight="10dp"
+        android:text="How to Track Bus"
+
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton1"
+        android:background="@color/white"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To track the bus you’re given two options.&#xA;
+        1. By search using Bus number&#xA;
+        2. By scanning Dynamic QR code&#xA;
+        1. By search using Bus number:&#xA;
+        ARTS application enter the bus number you want to track and you can the bus on map.&#xA;
+        2. By scanning Dynamic QR code:&#xA;
+        We are provide the QR scanner in ARTS app at bottom Action button on Home page.&#xA;
+        Now whenever user want to track the bus (at bus depot) just go to there and scan the QR code placed in front of that bus name."
+            />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+                <Button
+        android:id="@+id/expandableButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton2"
+        android:paddingRight="10dp"
+        android:text="Where QR code are located?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton1"
+        android:background="@color/white"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" QR code that work as Dynamic QR-Code for each bus will be located at each bus station in front of bus name" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <Button
+        android:id="@+id/expandableButton3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton3"
+        android:paddingRight="10dp"
+        android:text="How to Book Ticket?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton2"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First you have to select Booking Ticket &#xA;
+            Now provide details about your journey and select bus.&#xA;
+            Choose seat on Seatmap&#xA;
+            Make Payment&#xA;
+            That's all....Booking done" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton4"
+        android:paddingRight="10dp"
+        android:text="How to make use of QR Ticket?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton3"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whenever you go for journey conductor will scan QR Ticket and validating your identity.&#xA;
+            QR ticket would be available in Upcoming Booking Module" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton5"
+        android:paddingRight="10dp"
+        android:text="Till when can I cancel my Already booked Ticket?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton4"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can cancel out ticket till before 3 hours of your journey" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton6"
+        android:paddingRight="10dp"
+        android:text="How to recharge my Wallet?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton5"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to provide your valid bank cards details.&#xA;
+            Then you can recharge ARTS wallet from your account.&#xA;
+            When you would booking ticket your payment will be done from ARTS Wallet" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton7"
+        android:paddingRight="10dp"
+        android:text="What to do if I lost my some personal item in the bus?"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton6"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can request for your lost item through 'Lost and Found' module.&#xA;
+            You'll be notified in response of your lost item" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <Button
+        android:id="@+id/expandableButton8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey_200"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:onClick="expandableButton8"
+        android:paddingRight="10dp"
+        android:text="What details are given on Map"
+        android:textColor="#fff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:focusable="false"
+                    android:background="@color/primary"
+                    />
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton7"
+        android:background="#fff"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <TextView
+            android:id="@+id/help_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Map you can see bus route of bus you have searched as well as current location" />
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+
+                android:src="@drawable/ic_action_download"
+                app:backgroundTint="@color/primary"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
